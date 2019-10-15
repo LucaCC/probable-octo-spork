@@ -8,7 +8,7 @@
   <h1>Volume Conversion</h1>
   <form action='/volume'>
       Gallons to Liters<br>
-      <input type="number" name="volume">
+      <input type="number" step="0.01" name="volume">
       <br><br>
       <input type="submit">
       <p>{{ responseFromServer }} L</p>
