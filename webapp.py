@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def render_fuel_economy():
     if('fuel_economy' in request.args):
-        mpg = request.args['fuel_economy']
+        mpg = float(request.args['fuel_economy'])
         kmpl = mpg * .425144
         return render_template('mpg_kmpl.html', responseFromServer = kmpl)
     else:
@@ -14,7 +14,7 @@ def render_fuel_economy():
 @app.route("/pressure") #annotations tell which function goes with which request
 def render_pressure():
     if('pressure' in request.args):
-        atmosphere = request.args['pressure']
+        atmosphere = float(request.args['pressure'])
         torr = atmosphere * 760
         return render_template('atm_torr.html', responseFromServer = torr)
     else:
@@ -23,7 +23,7 @@ def render_pressure():
 @app.route("/volume")
 def render_volume():
     if('volume' in request.args):
-        gallon = request.args['volume']
+        gallon = float(request.args['volume'])
         liter = gallon * 3.78541
         return render_template('gal_lit.html', responseFromServer = liter)
     else:
