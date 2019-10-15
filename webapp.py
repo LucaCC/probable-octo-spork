@@ -1,6 +1,7 @@
 from flask import Flask, url_for, render_template, request
 
 app = Flask(__name__)
+responseFromServer = 0
 
 @app.route("/")
 def render_fuel_economy():
