@@ -6,4 +6,10 @@
 
 {% block content %}
   <h1>This about volume</h1>
+  <form action='/volume'>
+      Gallons to Liters<br>
+      <input type="number" name="volume">
+      <br><br>
+      <input type="submit">
+      <p>{{ responseFromServer }}</p>
 {% endblock %}
