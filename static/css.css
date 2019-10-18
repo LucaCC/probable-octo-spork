@@ -1,5 +1,5 @@
 img{
-  width: 33%;
+  width: 5%;
 }
 
 h1{
@@ -11,6 +11,6 @@ p{
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
-body { 
+body {
     background: url(/img/cream_dust.png) repeat 0 0;
 }
