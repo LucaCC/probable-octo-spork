@@ -5,10 +5,12 @@ img{
 h1{
   font-family: 'Corben', Georgia, Times, serif;
   text-shadow: 1px 1px 1px #ccc;
+  color: white;
 }
 
 p{
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 #a{
