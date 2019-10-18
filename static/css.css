@@ -1,5 +1,5 @@
 img{
-  width: 5%;
+  width: 33%;
 }
 
 h1{
@@ -12,5 +12,5 @@ p{
 }
 
 body {
-    background: url(/img/cream_dust.png) repeat 0 0;
+    background: url("Think.gif");
 }
