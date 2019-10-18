@@ -1,3 +1,16 @@
 img{
   width: 33%;
 }
+
+h1{
+  font-family: 'Corben', Georgia, Times, serif;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+p{
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+body { 
+    background: url(/img/cream_dust.png) repeat 0 0;
+}
