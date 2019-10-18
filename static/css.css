@@ -11,6 +11,14 @@ p{
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
-body {
+body a{
+    background: url("Think.gif");
+}
+
+body b{
     background: url("Patrick.gif");
+}
+
+body c{
+    background: url("Lion.gif");
 }

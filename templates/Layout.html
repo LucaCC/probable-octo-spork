@@ -14,7 +14,7 @@
   <title>{% block title %}{% endblock %} - My Webpage</title>
 
   </head>
-  <body>
+  <body {% if active_page == "mpg_kmpl" %} id = "a"{% endif %} {% if active_page == "gal_lit" %} id = "b"{% endif %} {% if active_page == "atm_torr" %} id = "c"{% endif %}>
     <!--nav bar-->
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -30,19 +30,6 @@
        </ul>
      </div>
    </nav>
-
-    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-light">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href=".">Conversions Website</a>
-        </div>
-          <ul class="nav navbar-nav">
-            <li {% if active_page == "home" %}class="active" {% endif %}><a href="/">Home</a></li>
-            <li {% if active_page == "page1" %}class="active" {% endif %}><a href="/pressure">Page 1</a></li>
-            <li {% if active_page == "page2" %}class="active" {% endif %}><a href="/volume">Page 2</a></li>
-          </ul>
-      </div>
-    </nav> -->
 
     <!--page content-->
     {%  block content %}{% endblock %}
